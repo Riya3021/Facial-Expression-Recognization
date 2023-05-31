@@ -1,0 +1,40 @@
+.cta{
+    margin: 100px 0px 0px 130px;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),url(banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+
+    padding: 100px 0;
+    
+}
+.contain-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+     border:  1px solid #fff;
+    padding: 5px 14px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.contain-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+
+}
+
+.cta h1{
+    color: #ffff;
+    font-size: 32px;
+    padding: 0;
+    margin-bottom: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+

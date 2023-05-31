@@ -1,0 +1,23 @@
+{%extends "base.html"%}
+
+{%block content%}
+<style>
+    h1 {
+        margin-top: 80px;
+        margin-bottom: 10px;
+    }
+</style>
+<center>
+    <h1 class="font-italic">
+        You selected this Video
+    </h1>
+
+
+    <img src="{{url_for('static', filename='after.mp4')}}" height=30% width=30%>
+
+    </body>
+
+</center>
+
+
+{%endblock%}

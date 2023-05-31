@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Place your kit's code here -->
+    <script src="https://kit.fontawesome.com/99abec536a.js" crossorigin="anonymous"></script>
+</head>
+
+<title>emotion</title>
+
+<link rel="stylesheet" href="{{url_for('static',filename='style(9).css')}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-link">
+            <ul>
+                <li> <a href="/home"> HOME</a> </li>
+                <li><a href="/about"> ABOUT </a> </li>
+                <li><a href="/how">WORKING</a> </li>
+                <li><a href="/emotion">EXPRESSION</a> </li>
+                <li><a href="/contact">CONTACT</a> </li>
+                <li><a href="/logout">LOG OUT</a> </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="title">
+        <h1>Expression</h1>
+    </div>
+    <section class="about-us">
+        <div class="about-col">
+            <h1>Facial Expression Recognition Web App</h1>
+            <br>
+            <p>
+                Human emotions can be classsified as : happy, fear, sad , disgust , anger ,surprise and neutral.
+                here in this page for detecting the emotions we have three diffrent types of categories they are
+                Image,Video and Live.
+
+            </p>
+        </div>
+
+        </div>
+    </section>
+
+    <!--------------box model------------------>
+
+    <div class="info_section">
+
+        <div class="info_box">
+            <h1>Face Emotion Recognition Via Image</h1>
+            <a href="/index" class="contain-btn-1"> Click here</a>
+
+        </div>
+        <!--Face Emotion Recognition Via video
+
+        <div class="info_box">
+            <h1>Face Emotion Recognition Via video</h1>
+            <a href="/predictv" class="contain-btn-1"> Click here</a>
+
+
+        </div>
+    -->
+
+        <div class="info_box">
+            <h1>Face Emotion Recognition Via Live</h1>
+            <a href="/indexs" class="contain-btn-1"> Click here</a>
+        </div>
+
+    </div>
+
+    <!--------------call to action------------------>
+
+    <section class="cta-1">
+
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="{{url_for('static',filename='v2.png')}}"></div>
+                <div class="swiper-slide"><img src="{{url_for('static',filename='v3.png')}}"></div>
+                <div class="swiper-slide"><img src="{{url_for('static',filename='v1.png')}}"></div>
+                <div class="swiper-slide"><img src="{{url_for('static',filename='v4.png')}}"></div>
+
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+        <script>
+            const swiper = new Swiper('.swiper', {
+
+                autoplay: {
+                    delay: 2000,
+                    disableonInteraction: false,
+                },
+                loop: true,
+
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+
+            });
+        </script>
+
+    </section>
+
+    <!--------------icons------------------>
+
+    <section class="footer">
+        <div class="icons">
+
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>

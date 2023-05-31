@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='register.css')}}">
+
+
+</head>
+
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+
+                <form action="{{ url_for('register') }}" method="post">
+
+                    <h2>SIGN UP</h2>
+
+                    <div class="inputbox">
+
+                        <ion-icon name="person-outline"></ion-icon>
+
+                        <input type="text" id="name" name="name" name="name" required>
+                        <label for="name">Name:</label>
+
+
+                    </div>
+
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" class="form-control" id="email" name="email" name="email" required>
+                        <label for="email">Email:</label>
+
+                    </div>
+
+                    <div class="inputbox">
+
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" class="form-control" id="password" name="password" name="pswd" required>
+                        <label for="pwd">Password:</label>
+
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Register</button>
+
+                    <div class="register">
+                        <p class="bottom">Already have an account ? <a class="bottom" href="{{url_for('login')}}"> Login
+                                here</a></p>
+                    </div>
+
+                </form>
+            </div>
+
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

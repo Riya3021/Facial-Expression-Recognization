@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Place your kit's code here -->
+    <script src="https://kit.fontawesome.com/99abec536a.js" crossorigin="anonymous"></script>
+</head>
+
+<title>contact</title>
+
+
+<link rel="stylesheet" href="{{url_for('static',filename='style(9).css')}}">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <section class="subheader">
+        <nav>
+            <a href="/"> <img src=""></a>
+            <div class="nav-links">
+                <ul>
+
+                    <li> <a href="/">HOME</a> </li>
+                    <li><a href="/aboutus">ABOUT</a> </li>
+                    <li><a href="/working">WORKING</a> </li>
+                    <li><a href="/expression">EXPRESSION</a> </li>
+                    <li><a href="/contactus">CONTACT</a> </li>
+                    <li><a href="/login">LOG IN</a> </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <h1>Contact us</h1>
+    </section>
+
+    <!--------------Google map------------------>
+
+    <section class="location">
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.1077720389285!2d72.63636061492335!3d23.23916498484379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c2b933477ba9f%3A0xe440409e66bea08a!2sLDRP%20Institute%20of%20Technology%20and%20Research!5e0!3m2!1sen!2sin!4v1634624599017!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </section>
+
+    <!--------------contact us page info------------------>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>
+                            LDRP Institute of Technology & Research,
+                            Near KH-5,
+                            Sector-15,</h5>
+                        <p> Gandhinagar - 382015.</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+ 91 - 079 - 23241492 </h5>
+                        <p>Monday to Saturday , 8 AM</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>info@ldrp.ac.in</h5>
+
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+
+            <!--------------form fil out------------------>
+
+            <div class="contact-col">
+                <form action="/contact" method="post">
+                    <input type="text" placeholder="Enter your name" required name="name">
+                    <input type="text" placeholder="Enter email address" name="email" required>
+                    <input type="text" placeholder="Enter your subject" name="sub" required>
+                    <textarea rows="8" placeholder="meassage" name="msg" required></textarea>
+                    <button type="submit" class="contain-btn1 red-btn">send message</button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!--------------icons------------------>
+
+    <section class="footer">
+        <div class="icons">
+
+            <a href="https://www.ldrp.ac.in"><i class="fa fa-facebook"></i></a>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>

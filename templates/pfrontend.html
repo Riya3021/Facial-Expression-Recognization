@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Place your kit's code here -->
+    <script src="https://kit.fontawesome.com/99abec536a.js" crossorigin="anonymous"></script>
+
+
+    <title>Facial expression Recognition</title>
+
+    <link rel="stylesheet" href="{{url_for('static',filename='style(9).css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+</head>
+
+<body>
+
+    <section class="header">
+        <nav>
+            <a href="/webpage"> <img src=""></a>
+            <div class="nav-links">
+                <ul>
+                    <li> <a href="/home">HOME</a> </li>
+                    <li><a href="/about">ABOUT</a> </li>
+                    <li><a href="/how">WORKING</a> </li>
+                    <li><a href="/emotion">EXPRESSION</a> </li>
+                    <li><a href="/contact">CONTACT</a> </li>
+                    <li><a href="/logout">LOG OUT</a> </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="text-box">
+            <h1> Facial Expression Recognition Web App </h1>
+        </div>
+
+        <div class="wel">
+            Logged in : {{session.name}}
+        </div>
+    </section>
+
+
+</body>
+
+</html>

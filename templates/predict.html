@@ -1,0 +1,25 @@
+{%extends "base.html"%}
+
+{%block content%}
+<style>
+    h1 {
+        margin-top: 80px;
+        margin-bottom: 10px;
+    }
+</style>
+<center>
+    <h1 class="font-italic">
+        You selected this image
+    </h1>
+
+
+    <img src="{{url_for('static', filename='after.jpg')}}" height=30% width=30%>
+
+    </body>
+
+    <h2 class='text-primary'>You Are Looking <span class='text-primary font-weight-bold'> {{data}} </span> </h2>
+
+</center>
+
+
+{%endblock%}
